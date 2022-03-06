@@ -1,0 +1,59 @@
+.codeit {
+    &-skills-list,
+    &-services-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li::before {
+            position: absolute;
+            font-family: "icomoon" !important;
+            speak: never;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            margin-top: 0.3rem;
+            left: -2rem;
+    
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+
+    &-skills-list {
+        margin: 0 3rem 1.5rem;
+        gap: 3rem 1.5rem;
+
+        li {
+            position: relative;
+            width: calc(50% - 3rem);
+            flex-grow: 1;
+            margin-left: 2rem;
+    
+            &::before {
+                content: "\e901";
+                color: $secondary;
+            }
+        }
+    }
+
+    &-services-list {
+        gap: 1rem 0;
+
+        li {
+            position: relative;
+            flex-grow: 1;
+            margin-left: 2rem;
+            color: $white;
+
+            &::before {
+                content: "\e902";
+                color: $text-muted;
+            }
+        }
+    }
+}

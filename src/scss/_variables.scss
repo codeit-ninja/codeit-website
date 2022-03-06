@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
+
+$primary: #3d2e8c;
+$secondary: #17dbff;
+$white: #FBFEF9;
+$dark: #1B1B1E;
+
+$body-bg: darken($primary, 22);
+$body-color: lighten(#1B1B1E, 60);
+$headings-color: $white;
+$text-muted: lighten($dark, 56);
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$headings-font-family: 'Josefin Sans', sans-serif;
+$font-weight-base: 500;

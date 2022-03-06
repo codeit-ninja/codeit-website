@@ -1,0 +1,13 @@
+.btn {
+    box-shadow: 3px 3px 15px darken($primary, 24);
+    border-radius: 10px;
+
+    &-outline {
+        &-secondary {
+            &:hover {
+                background-color: rgba($secondary, .2);
+                color: $white;
+            }
+        }
+    }
+}
