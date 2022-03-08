@@ -6,10 +6,10 @@
         </header>
         <div class="codeit-section-content mt-auto">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 mb-5 mb-md-0">
                     <img class="img-fluid" src={CodeItNinjaVector} alt="Code IT" />
                 </div>
-                <div class="col-7 offset-1">
+                <div class="col-md-7 offset-lg-1">
                     <div class="codeit-tiles">
                         <div class="codeit-tiles-tile text-center">
                             <strong class="d-block">Experience</strong>

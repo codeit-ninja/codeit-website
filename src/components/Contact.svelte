@@ -6,8 +6,8 @@
         </header>
         <div class="codeit-section-content mt-auto">
             <div class="row">
-                <div class="col-3">
-                    <div class="codeit-tiles flex-column gap-3">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="codeit-tiles flex-lg-column gap-3">
                         <div class="codeit-tiles-tile text-center">
                             <i class="icon icon-envelope-o fs-4 text-secondary"></i>
                             <h5 class="mb-0 mt-3">Email</h5>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7 offset-1">
+                <div class="col-lg-7 offset-lg-1">
                     {#if emailSend}
                         <div class="alert alert-success" role="alert">
                             Thanks for your message, I get back to you shortly.

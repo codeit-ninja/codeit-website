@@ -5,7 +5,6 @@
     import About from './components/About.svelte';
     import Contact from './components/Contact.svelte';
     import Experience from './components/Experience.svelte';
-    import Services from './components/Services.svelte';
     import Welcome from './components/Welcome.svelte';
 </script>
 
@@ -13,7 +12,6 @@
     <Welcome />
     <About />
     <Experience />
-    <Services />
     <Contact />
 </main>
 
