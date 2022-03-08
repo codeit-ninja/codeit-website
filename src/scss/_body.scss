@@ -1,7 +1,13 @@
 body {
+	background-image: url('../src/assets/pattern-5.svg');
+	background-repeat: repeat;
+	background-position: top;
+	background-size: 26000px;
+
 	main {
 		padding: 1rem;
 		margin: 0;
+		border-color: darken(#3d2e8c, 15);
 	}
 }
 
