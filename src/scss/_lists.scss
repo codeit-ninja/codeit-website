@@ -17,7 +17,7 @@
             text-transform: none;
             line-height: 1;
             margin-top: 0.3rem;
-            left: -2rem;
+            left: 0;
     
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -32,11 +32,24 @@
             position: relative;
             width: calc(50% - 3rem);
             flex-grow: 1;
-            margin-left: 2rem;
+            box-sizing: border-box;
+            padding-left: 2rem;
     
             &::before {
                 content: "\e901";
                 color: $secondary;
+            }
+        }
+
+        @include media-breakpoint-only(lg) {
+            & {
+                margin: 0 1.3rem 1.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) { 
+            & {
+                margin: 0 1.5rem 1.5rem;
             }
         }
     }
