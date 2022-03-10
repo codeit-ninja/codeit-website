@@ -20,7 +20,7 @@
                     <Timeline />
                 </div>
                 <div class="col-lg-3 align-self-center text-center">
-                    <span class="tb text-secondary">Scroll down</span>
+                    <span class="tb text-secondary">Scroll down ...</span>
                 </div>
             </div>
         </div>
