@@ -12,7 +12,7 @@
         </header>
         <div class="codeit-section-content mt-auto">
             <div class="grid" style="--bs-gap: 1rem;">
-                <div class="g-col-4 portfolio-item d-flex flex-column">
+                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
                     <div class="portfolio-item-header">
                         <i class="icon icon-project"></i>
                         <h5>Intranet met Office 365 en WordPress integratie</h5>
@@ -30,7 +30,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-4 portfolio-item d-flex flex-column">
+                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
                     <div class="portfolio-item-header">
                         <i class="icon icon-project"></i>
                         <h5>Vacatures filteren op basis van postcode</h5>
@@ -47,7 +47,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-4 portfolio-item d-flex flex-column">
+                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
                     <div class="portfolio-item-header">
                         <i class="icon icon-project"></i>
                         <h5>Royaljongbloed - Hoor het Woord roostertool</h5>
@@ -64,7 +64,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-4 portfolio-item d-flex flex-column">
+                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
                     <div class="portfolio-item-header">
                         <i class="icon icon-project"></i>
                         <h5>Thepiratebay.org API</h5>
@@ -78,7 +78,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-4 portfolio-item d-flex flex-column">
+                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
                     <div class="portfolio-item-header">
                         <i class="icon icon-project"></i>
                         <h5>Een VOD alternatief voor ons thuis</h5>
@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-4 portfolio-item d-flex flex-column">
+                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
                     <div class="portfolio-item-header">
                         <i class="icon icon-project"></i>
                         <h5>API koppling voor Alliander</h5>
