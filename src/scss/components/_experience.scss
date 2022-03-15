@@ -1,0 +1,10 @@
+#experience {
+    @include media-breakpoint-down(lg) {  
+        .codeit-tiles {
+            &-tile {
+                width: 100%;
+                flex: 0 0 auto;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
 
+$enable-cssgrid: true;
+
 $primary: #3d2e8c;
 $secondary: #17dbff;
 $white: #FBFEF9;
@@ -13,4 +15,4 @@ $link-color: $secondary;
 
 $font-family-sans-serif: 'Roboto', sans-serif;
 $headings-font-family: 'Josefin Sans', sans-serif;
-$font-weight-base: 500;
+$font-weight-base: 400;
