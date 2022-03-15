@@ -16,5 +16,4 @@
 
 <footer id="footer" class="text-center">
     <span class="fs-2 d-block">You have reached the end</span>
-    This site was made with <i class="icon icon-svelte"></i>
 </footer>

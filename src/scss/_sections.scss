@@ -30,20 +30,5 @@
 .codeit-social {
     a {
         text-decoration: none;
-
-        &:last-child {
-            position: relative;
-
-            &::after {
-                position: absolute;
-                background-color: $secondary;
-                content: " ";
-                height: 3rem;
-                width: 1px;
-                top: calc(100% + 1.2rem);
-                left: calc(50% - 1px);
-                transform: translate(0 -50%);
-            }
-        }
     }
 }
