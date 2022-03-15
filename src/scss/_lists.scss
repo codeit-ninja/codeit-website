@@ -69,4 +69,35 @@
             }
         }
     }
+
+    &-badges,
+    &-codestack {
+        font-family: $font-family-monospace;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: .5rem;
+        flex-wrap: wrap;
+        margin-top: .5rem;
+    }
+
+    &-badges {
+        li {
+            background-color: $primary;
+            color: $secondary;
+            font-size: .8rem;
+            font-weight: 600;
+            padding: .2rem .5rem;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px -4px darken($primary, 24);
+        }
+    }
+
+    &-codestack {
+        margin-top: 2rem;
+        color: lighten($gray-900, 40);
+        gap: 0 1.2rem;
+        font-size: .9rem;
+    }
 }

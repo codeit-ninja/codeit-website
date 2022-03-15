@@ -8,7 +8,7 @@
         background-color: $primary;
         border-radius: 15px;
         padding: 1.5rem;
-        box-shadow: 3px 3px 15px darken($primary, 24);
+        box-shadow: 0 10px 30px -15px darken($primary, 25);
 
         &-header {
             text-align: center;
