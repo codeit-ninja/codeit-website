@@ -11,9 +11,9 @@
             const animDurations = {
                 line: .7,
                 dot: .05,
-                date: .5,
+                date: .3,
                 title: 2,
-                body: .5,
+                body: .3,
                 delay: 0
             }
 
@@ -24,7 +24,7 @@
                     },
                     {
                         height: '93%',
-                        duration: animDurations.line / 3,
+                        duration: animDurations.line / 1.5,
                         delay: animDurations.delay
                     }
                 ),
@@ -35,22 +35,24 @@
                     {
                         transform: 'scale(1)',
                         duration: animDurations.dot,
-                        delay: animDurations.delay + animDurations.line / 3 + .05
+                        delay: animDurations.delay + animDurations.line / 1.5 + .05
                     }
                 )
                 gsap.fromTo(timelineItems[i].querySelector('.codeit-timeline-date'), 
                     {
-                        transform: 'rotateY(90deg)'
+                        transform: 'translateX(-100px)',
+                        opacity: 0
                     },
                     {
-                        transform: 'rotateY(0deg)',
+                        transform: 'translateX(0)',
+                        opacity: 1,
                         duration: animDurations.date,
-                        delay: animDurations.delay + animDurations.line / 3 + animDurations.dot
+                        delay: animDurations.delay + animDurations.line / 1.5 + animDurations.dot
                     }
                 )
                 gsap.fromTo(timelineItems[i].querySelectorAll('.codeit-timeline-body'), 
                     {
-                        transform: 'translateX(100px)',
+                        transform: 'translateX(200px)',
                         transformOrigin: 'left',
                         opacity: 0
                     },
@@ -58,7 +60,7 @@
                         transform: 'translateX(0)',
                         opacity: 1,
                         duration: animDurations.body,
-                        delay: animDurations.delay + animDurations.line / 3 + animDurations.dot,
+                        delay: animDurations.delay + animDurations.line / 1.5 + animDurations.dot,
                     }
                 )
                 gsap.fromTo(timelineItems[i].querySelectorAll('.codeit-badges li'), 
@@ -69,11 +71,11 @@
                         transform: 'scale(1)',
                         duration: .05,
                         stagger: .05,
-                        delay: animDurations.delay + animDurations.line / 3 + animDurations.dot + animDurations.body,
+                        delay: animDurations.delay + animDurations.line / 1.5 + animDurations.dot + animDurations.date + animDurations.body,
                     }
                 )
                 
-                animDurations.delay += animDurations.line;
+                animDurations.delay = animDurations.delay + animDurations.line / 1.5 + animDurations.dot + animDurations.date + animDurations.body + .3;
             }
 
             //return tl;
