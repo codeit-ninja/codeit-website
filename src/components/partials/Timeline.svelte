@@ -1,15 +1,12 @@
 <script lang="ts">
-    import gsap, { SteppedEase } from "gsap";
-    import { TextPlugin } from "gsap/TextPlugin";
+    import gsap from "gsap";
     import { onMount } from "svelte";
-
-    gsap.registerPlugin(TextPlugin)
 
     onMount(() => {
         function scene1() {
             const timelineItems = document.querySelectorAll('.codeit-timeline-item');
             const animDurations = {
-                line: .7,
+                line: .2,
                 dot: .05,
                 date: .3,
                 title: 2,
@@ -71,11 +68,11 @@
                         transform: 'scale(1)',
                         duration: .05,
                         stagger: .05,
-                        delay: animDurations.delay + animDurations.line / 1.5 + animDurations.dot + animDurations.date + animDurations.body,
+                        delay: animDurations.delay + animDurations.line / 1.5 + animDurations.dot + animDurations.date,
                     }
                 )
                 
-                animDurations.delay = animDurations.delay + animDurations.line / 1.5 + animDurations.dot + animDurations.date + animDurations.body + .3;
+                animDurations.delay = animDurations.delay + animDurations.line / 1.5 + animDurations.dot + animDurations.date + animDurations.body;
             }
 
             //return tl;

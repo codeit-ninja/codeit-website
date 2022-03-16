@@ -13,9 +13,13 @@
 
         &-left-side {
             position: relative;
-            min-width: 220px;
+            min-width: 180px;
             text-align: right;
             padding-right: 4rem;
+        }
+
+        &-right-side {
+            overflow: hidden;
         }
     }
 
@@ -51,6 +55,16 @@
                 top: 3px;
                 z-index: 2;
                 border-radius: 50%;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .codeit-timeline {
+        &-item {    
+            &-left-side {
+                min-width: 160px;
             }
         }
     }
