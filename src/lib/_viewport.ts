@@ -9,8 +9,8 @@ export async function isInViewport(el: Element, margin?: string) {
                 }
             });
         },
-        { 
-            rootMargin: margin || '-300px' 
+        {
+            rootMargin: margin || '-400px 0px 0px 0px'
         });
 
         observer.observe(el);
