@@ -63,7 +63,7 @@
     import { onMount } from "svelte";
     
     onMount( async () => {
-        if(await isInViewport(document.getElementById('about'))) {
+        if(await isInViewport(document.querySelector('#about .codeit-tiles'))) {
             gsap.fromTo('#about .codeit-tiles-tile', 
                 {
                     opacity: 0,
