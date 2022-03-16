@@ -57,4 +57,25 @@
 </div>
 <script lang="ts">
     import CodeItNinjaVector from '../assets/about-me-2.svg';
+
+    import gsap from "gsap";
+    import { isInViewport } from "../lib/_viewport";
+    import { onMount } from "svelte";
+    
+    onMount( async () => {
+        if(await isInViewport(document.getElementById('about'))) {
+            gsap.fromTo('#about .codeit-tiles-tile', 
+                {
+                    opacity: 0,
+                    transform: 'scale(0)'
+                },
+                {
+                    opacity: 1,
+                    transform: 'scale(1)',
+                    duration: .15,
+                    stagger: .1
+                }
+            )
+        }
+    })
 </script>

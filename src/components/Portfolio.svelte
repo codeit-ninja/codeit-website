@@ -1,7 +1,24 @@
 <script lang="ts">
-    import PortfolioVector from "../assets/portfolio-image.svg";
-    import IntranetImage from "../assets/Screenshot 2022-03-13 164129.png";
-    import RoostertoolImage from "../assets/portfolio-roostertool.png";
+    import gsap from "gsap";
+    import { isInViewport } from "../lib/_viewport";
+    import { onMount } from "svelte";
+    
+    onMount( async () => {
+        if(await isInViewport(document.getElementById('portfolio'))) {
+            gsap.fromTo('.portfolio-item', 
+                {
+                    opacity: 0,
+                    transform: 'translateY(20px)'
+                },
+                {
+                    opacity: 1,
+                    transform: 'translateY(0)',
+                    duration: 1,
+                    stagger: .1
+                }
+            )
+        }
+    })
 </script>
 
 <div class="codeit-section mt-5" id="portfolio">
@@ -12,14 +29,18 @@
         </header>
         <div class="codeit-section-content mt-auto">
             <div class="grid" style="--bs-gap: 1rem;">
-                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
+                <div
+                    class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
+                >
                     <div class="portfolio-item-header">
-                        <i class="icon icon-project"></i>
+                        <i class="icon icon-project" />
                         <h5>Intranet met Office 365 en WordPress integratie</h5>
                     </div>
                     <div class="portfolio-item-body">
-                        Intranet ontwikkeld voor grote organisatie uit Deventer. De wens was om Office 365 in WordPress te integreren. Ik heb dit samen met
-                        Prodes uit Arnhem ontwikkeld. Ik heb zowel de front-end als back-end ontwikkeld.
+                        Intranet ontwikkeld voor grote organisatie uit Deventer.
+                        De wens was om Office 365 in WordPress te integreren. Ik
+                        heb dit samen met Prodes uit Arnhem ontwikkeld. Ik heb
+                        zowel de front-end als back-end ontwikkeld.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
                         <ul class="codeit-codestack">
@@ -30,14 +51,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
+                <div
+                    class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
+                >
                     <div class="portfolio-item-header">
-                        <i class="icon icon-project"></i>
+                        <i class="icon icon-project" />
                         <h5>Vacatures filteren op basis van postcode</h5>
                     </div>
                     <div class="portfolio-item-body">
-                        Een zoekfunctionaliteit ontwikkeld voor New York Pizza's werkenbij website, zodat potentiële nieuwe werknemers
-                        kunnen zoeken op actuele vacatures in de buurt. 
+                        Een zoekfunctionaliteit ontwikkeld voor New York Pizza's
+                        werkenbij website, zodat potentiële nieuwe werknemers
+                        kunnen zoeken op actuele vacatures in de buurt.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
                         <ul class="codeit-codestack">
@@ -47,14 +71,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
+                <div
+                    class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
+                >
                     <div class="portfolio-item-header">
-                        <i class="icon icon-project"></i>
+                        <i class="icon icon-project" />
                         <h5>Royaljongbloed - Hoor het Woord roostertool</h5>
                     </div>
                     <div class="portfolio-item-body">
-                        Een applicatie ontwikkeld waarin leerkrachten een rooster kunnen maken voor hun klas. Dit rooster kan geëxporteerd 
-                        worden als excel, CSV, of direct geprint worden.
+                        Een applicatie ontwikkeld waarin leerkrachten een
+                        rooster kunnen maken voor hun klas. Dit rooster kan
+                        geëxporteerd worden als excel, CSV, of direct geprint
+                        worden.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
                         <ul class="codeit-codestack">
@@ -64,9 +92,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
+                <div
+                    class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
+                >
                     <div class="portfolio-item-header">
-                        <i class="icon icon-project"></i>
+                        <i class="icon icon-project" />
                         <h5>Thepiratebay.org API</h5>
                     </div>
                     <div class="portfolio-item-body">
@@ -78,9 +108,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
+                <div
+                    class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
+                >
                     <div class="portfolio-item-header">
-                        <i class="icon icon-project"></i>
+                        <i class="icon icon-project" />
                         <h5>Een VOD alternatief voor ons thuis</h5>
                     </div>
                     <div class="portfolio-item-body">
@@ -100,13 +132,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
+                <div
+                    class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
+                >
                     <div class="portfolio-item-header">
-                        <i class="icon icon-project"></i>
+                        <i class="icon icon-project" />
                         <h5>API koppling voor Alliander</h5>
                     </div>
                     <div class="portfolio-item-body">
-                        Een WordPress plugin ontwikkeld voor de dochterondernemingen van Alliander om te koppelen met interne vacature systemen.
+                        Een WordPress plugin ontwikkeld voor de
+                        dochterondernemingen van Alliander om te koppelen met
+                        interne vacature systemen.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
                         <ul class="codeit-codestack">

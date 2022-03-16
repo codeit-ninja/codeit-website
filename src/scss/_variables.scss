@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Josefin+Sans:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
 
 $enable-cssgrid: true;
 
@@ -14,5 +14,6 @@ $text-muted: lighten($dark, 56);
 $link-color: $secondary;
 
 $font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-monospace: 'Fira Code', monospace;
 $headings-font-family: 'Josefin Sans', sans-serif;
 $font-weight-base: 400;
