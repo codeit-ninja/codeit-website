@@ -92,6 +92,14 @@
             border-radius: 5px;
             box-shadow: 2px 2px 8px -4px darken($primary, 24);
         }
+
+        &-reversed {
+            li {
+                background-color: lighten($primary, 15);
+                color: $secondary;
+                box-shadow: 2px 2px 8px -4px darken($primary, 8);
+            }
+        }
     }
 
     &-codestack {

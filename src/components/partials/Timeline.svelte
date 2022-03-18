@@ -72,7 +72,7 @@
                     }
                 )
                 
-                animDurations.delay = animDurations.delay + animDurations.line / 1.5 + animDurations.dot + animDurations.date + animDurations.body;
+                animDurations.delay = animDurations.delay + animDurations.line / 1.5 + animDurations.dot;
             }
 
             //return tl;
@@ -192,14 +192,14 @@
     </div>
     <div class="codeit-timeline-item">
         <div class="codeit-timeline-item-left-side">
-            <span class="codeit-timeline-date">2014 - 2017</span>
+            <span class="codeit-timeline-date">2009 - 2012</span>
             
             <div class="codeit-timeline-seperator-line"></div>
             <div class="codeit-timeline-seperator-dot"></div>
         </div>
         <div class="codeit-timeline-item-right-side">
             <div class="codeit-timeline-body">
-                <strong class="codeit-timeline-title">Code IT</strong>
+                <strong class="codeit-timeline-title">Became a nerd</strong>
                 <p class="mb-0">At the age of 13 I started to write my first code</p>
                 <ul class="codeit-badges mt-3 mb-5">
                     <li>HTML</li>
@@ -209,70 +209,4 @@
             </div>
         </div>
     </div>
-    <!-- <div class="codeit-timeline-item">
-        <span class="codeit-timeline-date">2017 - 2020</span>
-        <div class="codeit-timeline-body">
-            <span class="codeit-timeline-title">Infocaster/Prodes</span>
-            <p>
-                Started as Vue front-end developer. But found out I rather
-                wanted to stay fullstack. Moved to another group inside the
-                company, which was later baptized to prodes. Created amazing
-                applications for great customers.
-            </p>
-            <ul>
-                <li>Vue</li>
-                <li>WordPress</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>SCSS</li>
-                <li>PHP</li>
-            </ul>
-        </div>
-    </div>
-    <div class="codeit-timeline-item">
-        <span class="codeit-timeline-date">2014 - 2017</span>
-        <div class="codeit-timeline-body">
-            <span class="codeit-timeline-title">Solvisoft</span>
-            <p>
-                Helped them engineer their entire CMS to be dynamic using
-                AngularJS. We seperated back-end from front-end by creating API
-                endpoints. I was responsible for the AngularJS implementation.
-            </p>
-            <ul>
-                <li>JavaScript</li>
-                <li>AngularJS</li>
-                <li>Bootstrap</li>
-                <li>LESS</li>
-                <li>C#</li>
-            </ul>
-        </div>
-    </div>
-    <div class="codeit-timeline-item">
-        <span class="codeit-timeline-date">2010 - 2014</span>
-        <div class="codeit-timeline-body">
-            <span class="codeit-timeline-title">Storm Online</span>
-            <p>
-                Was the only front-end developer. Was responsible for all
-                WordPress websites. I designed and created custom themes, and
-                plugins.
-            </p>
-            <ul>
-                <li>WordPress</li>
-                <li>PHP</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>SCSS</li>
-            </ul>
-        </div>
-    </div>
-    <div class="codeit-timeline-item">
-        <span class="codeit-timeline-date">2009</span>
-        <div class="codeit-timeline-body">
-            <span class="codeit-timeline-title">Started programming</span>
-            <p class="mb-0">
-                At the age of 13 I started to write my first code
-            </p>
-        </div>
-    </div> -->
 </div>

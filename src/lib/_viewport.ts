@@ -1,9 +1,14 @@
-export async function isInViewport(el: Element, margin?: string) {
+/**
+ * Check if given element is in viewport
+ * 
+ * @param el        - Selector or an HTML Element
+ * @param margin    - https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin
+ */
+export async function isInViewport(el: Element|string, margin?: string): Promise<true> {
     return new Promise(resolve => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if(entry.intersectionRatio > 0) {
-                    console.log(entry.target)
                     resolve(true)
                     observer.disconnect()
                 }
@@ -13,6 +18,11 @@ export async function isInViewport(el: Element, margin?: string) {
             rootMargin: margin || '-400px 0px 0px 0px'
         });
 
-        observer.observe(el);
+        if(typeof el === 'string') {
+            observer.observe(document.querySelector(el));
+        }
+        else {
+            observer.observe(el);
+        }
     })
 }
