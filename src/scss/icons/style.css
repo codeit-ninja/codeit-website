@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?9xyxoe') format('truetype'),
-    url('fonts/icomoon.woff?9xyxoe') format('woff'),
-    url('fonts/icomoon.svg?9xyxoe#icomoon') format('svg');
+    url('fonts/icomoon.ttf?dbsn7b') format('truetype'),
+    url('fonts/icomoon.woff?dbsn7b') format('woff'),
+    url('fonts/icomoon.svg?dbsn7b#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,9 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-user:before {
+  content: "\e908";
+}
+.icon-menu-skills:before {
+  content: "\e906";
+}
+.icon-menu-timeline:before {
+  content: "\e907";
+}
 .icon-svelte:before {
   content: "\e904";
   color: #ff3e00;
+}
+.icon-menu-contact:before {
+  content: "\e909";
 }
 .icon-heart:before {
   content: "\e905";
@@ -43,7 +55,10 @@
 .icon-mouse:before {
   content: "\e900";
 }
-.icon-project:before {
+.icon-portfolio-item:before {
+  content: "\e924";
+}
+.icon-menu-portolio:before {
   content: "\e925";
 }
 .icon-whatsapp:before {

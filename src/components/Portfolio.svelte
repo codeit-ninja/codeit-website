@@ -43,7 +43,7 @@
                         zowel de front-end als back-end ontwikkeld.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
-                        <ul class="codeit-codestack">
+                        <ul class="codeit-badges codeit-badges-reversed mt-4">
                             <li>WordPress</li>
                             <li>PHP</li>
                             <li>Angular</li>
@@ -64,7 +64,7 @@
                         kunnen zoeken op actuele vacatures in de buurt.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
-                        <ul class="codeit-codestack">
+                        <ul class="codeit-badges codeit-badges-reversed mt-4">
                             <li>WordPress</li>
                             <li>PHP</li>
                             <li>Web Components</li>
@@ -85,7 +85,7 @@
                         worden.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
-                        <ul class="codeit-codestack">
+                        <ul class="codeit-badges codeit-badges-reversed mt-4">
                             <li>NodeJS</li>
                             <li>TypeScript</li>
                             <li>Vue</li>
@@ -103,7 +103,7 @@
                         Een API wrapper package voor de officiële TPB API.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
-                        <ul class="codeit-codestack">
+                        <ul class="codeit-badges codeit-badges-reversed mt-4">
                             <li>TypeScript</li>
                         </ul>
                     </div>
@@ -119,7 +119,7 @@
                         Onze eigen Netflix/HBO/Disney... maar dan gratis.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
-                        <ul class="codeit-codestack">
+                        <ul class="codeit-badges codeit-badges-reversed mt-4">
                             <li>NodeJS</li>
                             <li>TypeScript</li>
                             <li>AdonisJS</li>
@@ -145,7 +145,7 @@
                         interne vacature systemen.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
-                        <ul class="codeit-codestack">
+                        <ul class="codeit-badges codeit-badges-reversed mt-4">
                             <li>WordPress</li>
                             <li>JavaScript</li>
                             <li>PHP</li>
