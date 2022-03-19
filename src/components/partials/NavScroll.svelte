@@ -1,19 +1,25 @@
 <script lang="ts">
-    let left = '1.5rem';
-    let body = document.body;
+    import { onMount } from "svelte";
+    import { pos } from "../../composables/_element";
 
-    window.addEventListener('scroll', () => {
+    let left = 0;
+
+    const startingPos = (rem: number) => rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+    onMount(() => {
         const navbar = document.querySelector('#site-nav ul');
-        const computedStyle = getComputedStyle(navbar);
-        const scroller = document.getElementById('navscroller');
-        const scrollWidth = navbar.clientWidth - scroller.clientWidth - (parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight));
-        const scrolled = window.scrollY / (body.clientHeight - window.innerHeight) * 100;
+        let currentlyActivePos = pos([...document.querySelectorAll('.codeit-navlink.active')].pop(), 'x')
 
-        left = parseFloat(computedStyle.paddingLeft) + scrolled / 100 * scrollWidth + 'px';
+        left = currentlyActivePos - pos(navbar, 'x') ;
+
+        window.addEventListener('scroll', () => {
+            currentlyActivePos = pos([...document.querySelectorAll('.codeit-navlink.active')].pop(), 'x')
+            left = currentlyActivePos - pos(navbar, 'x');
+        })
     })
 </script>
 <template>
-    <span style:left={left} id="navscroller"></span>
+    <span style:left={left ? left + 'px' : startingPos(1.5) + 'px'} id="navscroller"></span>
 </template>
 <style lang="scss" scoped>
     span {
@@ -26,5 +32,16 @@
         width:  50px;
         border-radius: 50%;
         transform: translateY(-50%);
+        transition: all .1s cubic-bezier(.97,.62,.65,1.26);
+        //animation: jump .5s infinite;
+    }
+
+    @keyframes jump {
+        from {
+            transform: scaleX(1.4);
+        }
+        to {
+            transform: scaleX(1);
+        }
     }
 </style>

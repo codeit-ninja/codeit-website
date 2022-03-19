@@ -6,16 +6,19 @@
     export let Template;
     export let index;
 
-    onMount(() => {
-        routes[index].mounted = true;
+    onMount( async () => {
+        if(await isInViewport(`#${routes[index].slug}`, '0px 0px -600px 0px')) routes[index].active = true;
         
         window.addEventListener('scroll', async () => {
             routes[index].active = false;
 
-            if(await isInViewport(`#${routes[index].slug}`, '00px 0px -500px 0px')) {                
+            if(await isInViewport(`#${routes[index].slug}`, '0px 0px -600px 0px')) {                
                 routes[index].active = true;
             }
         })
+        
+        routes[index].mounted = true;
+        routes[index].active = false;
     })
 </script>
 <template>

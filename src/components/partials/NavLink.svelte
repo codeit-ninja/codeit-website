@@ -10,5 +10,5 @@
     })
 </script>
 <template>
-    <li><a href={`#${route.slug}`} class:active={active}><i class={route.icon}></i></a></li>
+    <li class="codeit-navlink" aria-labelledby={route.slug} class:active={active}><a href={`#${route.slug}`}><i class={route.icon}></i></a></li>
 </template>

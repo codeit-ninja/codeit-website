@@ -2,10 +2,6 @@
     import { routes } from '../../lib/_router';
     import NavLink from './NavLink.svelte';
     import NavScroll from './NavScroll.svelte';
-
-    
-
-    console.log(routes)
 </script>
 <template>
     <nav id="site-nav">
