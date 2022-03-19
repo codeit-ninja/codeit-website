@@ -32,7 +32,7 @@
         width:  50px;
         border-radius: 50%;
         transform: translateY(-50%);
-        transition: all .1s cubic-bezier(.97,.62,.65,1.26);
+        transition: all .1s cubic-bezier(0,.39,.87,1.23);
         //animation: jump .5s infinite;
     }
 
