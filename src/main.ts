@@ -4,7 +4,7 @@ import { routes } from './router';
 
 import './scss/codeit.scss';
 
-await router.init(routes);
+router.init(routes);
 
 const app = new App({
   target: document.getElementById('app'),
