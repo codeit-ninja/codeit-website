@@ -39,7 +39,7 @@
                             <input type="email" class="form-control form-control-lg" placeholder="Your email" name="email" bind:value={$contact.email} required />
                         </div>
                         <div class="mb-4">
-                            <textarea class="form-control form-control-lg" placeholder="Your message" name="message" bind:value={$contact.message} required></textarea>
+                            <textarea class="form-control form-control-lg" placeholder="Your message" name="message" bind:value={$contact.message} rows="5" required></textarea>
                         </div>
                         <div class="mb-4">
                             <button type="submit" class="btn btn-lg btn-secondary">

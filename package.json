@@ -25,6 +25,7 @@
     "@emailjs/browser": "^3.4.0",
     "@types/underscore.string": "^0.0.38",
     "gsap": "^3.9.1",
+    "underscore": "^1.13.2",
     "underscore.string": "^3.3.6",
     "vite-plugin-dynamic-import": "^0.1.1"
   }

@@ -1,10 +1,10 @@
 <script lang="ts">
     import gsap from "gsap";
-    import { isInViewport } from "../lib/_viewport";
+    import { whenInViewPort } from "../lib/_viewport";
     import { onMount } from "svelte";
     
     onMount( async () => {
-        if(await isInViewport(document.getElementById('portfolio'))) {
+        whenInViewPort(document.getElementById('portfolio'), () => {
             gsap.fromTo('.portfolio-item', 
                 {
                     opacity: 0,
@@ -17,7 +17,8 @@
                     stagger: .1
                 }
             )
-        }
+        })
+            
     })
 </script>
 

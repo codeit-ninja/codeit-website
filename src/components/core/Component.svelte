@@ -1,26 +1,28 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { routes } from '../../lib/_router';
     import { isInViewport } from "../../lib/_viewport";
+    import { router } from '../../lib/_router';
+    import { debounce } from 'underscore'
 
-    export let Template;
+    export let template;
     export let index;
 
-    onMount( async () => {
-        if(await isInViewport(`#${routes[index].slug}`, '0px 0px -600px 0px')) routes[index].active = true;
-        
-        window.addEventListener('scroll', async () => {
-            routes[index].active = false;
+    const setActiveRoute = async () => {
+        $router[index].active = false;
 
-            if(await isInViewport(`#${routes[index].slug}`, '0px 0px -600px 0px')) {                
-                routes[index].active = true;
-            }
-        })
+        if( await isInViewport(`#${$router[index].slug}`, '0px 0px -600px 0px' ) ) {                
+            $router[index].active = true;
+        }
+    }
+
+    onMount( async () => {
+        setActiveRoute();
         
-        routes[index].mounted = true;
-        routes[index].active = false;
+        window.addEventListener('scroll', debounce(setActiveRoute, 50))
+        
+        $router[index].mounted = true;
     })
 </script>
 <template>
-    <Template />
+    <svelte:component this={template} />
 </template>

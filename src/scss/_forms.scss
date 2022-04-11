@@ -3,6 +3,8 @@
         background-color: transparent;
         border: 2px solid darken($primary, 8);
         border-radius: 10px;
+        font-family: $font-family-monospace;
+        color: $white;
 
         &-lg {
             padding: 1.5rem;
@@ -13,6 +15,15 @@
         &:focus {
             background-color: inherit;
             border-color: $secondary;
+            color: $white;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover, 
+        &:-webkit-autofill:focus, 
+        &:-webkit-autofill:active{
+            transition: background-color 5000s ease-in-out 0s;
+            -webkit-text-fill-color: $white !important;
         }
     }
 }

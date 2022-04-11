@@ -39,11 +39,11 @@
 <script lang="ts">
     import { codeit } from '../test';
     import gsap from "gsap";
-    import { isInViewport } from "../lib/_viewport";
+    import { whenInViewPort } from "../lib/_viewport";
     import { onMount } from "svelte";
     
-    onMount( async () => {
-        if(await isInViewport(document.getElementById('experience'))) {
+    onMount( () => {
+        whenInViewPort(document.getElementById('experience'), () => {
             gsap.fromTo('#experience .codeit-tiles-tile', 
                 {
                     opacity: 0,
@@ -56,6 +56,6 @@
                     stagger: .1
                 }
             )
-        }
+        })
     })
 </script>
