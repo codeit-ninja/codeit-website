@@ -69,6 +69,7 @@
 </div>
 <script lang="ts">
     import CodeItNinjaVector from '../assets/about-me-2.svg';
+    import MyAmazingSong from '../assets/my-song.ogg';
 
     import gsap from "gsap";
     import { whenInViewPort } from "../lib/_viewport";
@@ -107,7 +108,7 @@
             height: 80,
             cursorWidth: 0
         });
-        wavesurfer.load('src/assets/my-song.ogg');
+        wavesurfer.load(MyAmazingSong);
 
         whenInViewPort('#about .codeit-tiles', () => {
             gsap.fromTo('#about .codeit-tiles-tile', 
