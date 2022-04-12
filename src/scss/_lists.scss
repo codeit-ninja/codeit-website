@@ -84,8 +84,8 @@
 
     &-badges {
         li {
-            background-color: $primary;
-            color: $secondary;
+            background: linear-gradient(-45deg, darken(#ee7752, 7), darken(#e73c7e, 5));
+            color: $white;
             font-size: .8rem;
             font-weight: 600;
             padding: .2rem .5rem;
@@ -95,8 +95,9 @@
 
         &-reversed {
             li {
+                background: none;
                 background-color: lighten($primary, 15);
-                color: $secondary;
+                color: $white;
                 box-shadow: 2px 2px 8px -4px darken($primary, 8);
             }
         }
