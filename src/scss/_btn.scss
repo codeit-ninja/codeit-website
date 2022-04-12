@@ -10,4 +10,57 @@
             }
         }
     }
+
+    &-player {
+        padding: 0;
+        color: $secondary;
+        border: 1px solid rgba($secondary, 1);
+        margin: 0;
+        border-radius: 0;
+        padding: .4rem .7rem .2rem;
+        font-size: 1.4rem;
+    }
+
+    &-play {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+        // background-color: $body-bg;
+        // position: relative;
+        // border-radius: 50%;
+        // height: 40px;
+        // width: 40px;
+        // border: 2px solid transparent;
+        // padding: 0;
+
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0; right: 0; bottom: 0; left: 0;
+        //     z-index: -1;
+        //     margin: -4px; /* !importanté */
+        //     border-radius: inherit; /* !importanté */
+        //     background: linear-gradient(50deg, $secondary 20%, $purple 70%);
+        // }
+
+        .bi {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e);
+            font-size: 3rem;
+            color: $secondary;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &-stop {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }

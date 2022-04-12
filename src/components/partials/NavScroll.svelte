@@ -14,7 +14,7 @@
     $: currentlyActivePos = pos(activeNavItem, 'x');
     $: {
         navbar = document.querySelector('#site-nav ul');
-
+        console.log(pos(navbar, 'x'))
         if( activeNavItem && activeNavItem !== prevActiveNavItem ) {
             left = currentlyActivePos - pos(navbar, 'x');
             activeNavItem.querySelector('a').style.color = getCssVariable('--bs-primary');
@@ -46,7 +46,7 @@
         border-radius: 50%;
         transform: translateY(-50%);
         transition: all 0.05s cubic-bezier(0.22, 0.4, 0.92, 0.66);
-        z-index: -1;
+        z-index: 0;
         //animation: jump .5s forwards;
     }
 

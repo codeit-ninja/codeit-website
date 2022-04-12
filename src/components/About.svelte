@@ -10,25 +10,29 @@
                     <img class="img-fluid" src={CodeItNinjaVector} alt="Code IT" />
                 </div>
                 <div class="col-md-7 offset-lg-1">
-                    <div class="codeit-tiles">
+                    <div class="codeit-tiles mb-5">
                         <div class="codeit-tiles-tile text-center">
+                            <i class="icon icon-medal text-secondary fs-2 mb-3 d-block"></i>
+                            <strong class="d-block">Experience</strong>
+                            <span class="d-block text-muted">8+ Years</span>
+                        </div>
+                        <div class="codeit-tiles-tile text-center">
+                            <i class="icon icon-medal text-secondary fs-2 mb-3 d-block"></i>
+                            <strong class="d-block">Websites</strong>
+                            <span class="d-block text-muted">40+</span>
+                        </div>
+                        <div class="codeit-tiles-tile text-center">
+                            <i class="icon icon-medal text-secondary fs-2 mb-3 d-block"></i>
                             <strong class="d-block">Experience</strong>
                             <span class="d-block text-muted">5+ Years</span>
                         </div>
                         <div class="codeit-tiles-tile text-center">
-                            <strong class="d-block">Experience</strong>
-                            <span class="d-block text-muted">5+ Years</span>
-                        </div>
-                        <div class="codeit-tiles-tile text-center">
-                            <strong class="d-block">Experience</strong>
-                            <span class="d-block text-muted">5+ Years</span>
-                        </div>
-                        <div class="codeit-tiles-tile text-center">
+                            <i class="icon icon-medal text-secondary fs-2 mb-3 d-block"></i>
                             <strong class="d-block">Experience</strong>
                             <span class="d-block text-muted">5+ Years</span>
                         </div>
                     </div>
-                    <div class="my-5">
+                    <div class="my-2">
                         <p>
                             Creatief, dat is wat mij kenmerkt. Op mijn 11e verjaardag kreeg ik mijn eerste computer. Sinds die dag is mijn
                             interesse in computers en alles wat daarbij komt kijken onstaan.
@@ -43,13 +47,21 @@
                             Al gauw leerde ik HTML, CSS, jQuery en PHP. Op mijn 17e besloot ik hiervan mijn fulltime baan te maken.
                         </p>
                         <p>
-                            <small>* Had ik al verteld dat ik ook mijn <a href="https://www.youtube.com/channel/UC-m0kQj6k4lA5g9KYgSlcZQ">eigen vuurwerk</a> maak voor oudjaar?</small>
-                        </p>
-                        <p>
-                            <small>** Had ik ook al verteld dat ik in een muziekale bui innees talent heb voor het maken van muziek?</small>
+                            <small>* Oh, in een muziekale bui maak ik ook muziek.</small>
                         </p>
                     </div>
-                    <button class="btn btn-lg btn-secondary">Lets talk</button>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center gap-4">
+                            <div>
+                                <button class="btn btn-player btn-play btn-lg" on:click={toggle}>
+                                    <i class="bi" class:bi-play-circle={!isPlaying} class:bi-pause-circle={isPlaying}></i>
+                                </button>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div id="waveform"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,8 +73,42 @@
     import gsap from "gsap";
     import { whenInViewPort } from "../lib/_viewport";
     import { onMount } from "svelte";
-    
+    import WaveSurfer from 'wavesurfer.js';
+    import { getCssVariable } from '../composables/_core';
+
+    let wavesurfer: WaveSurfer;
+    let isPlaying = false;
+
+    const toggle = () => {
+        console.log(wavesurfer.isPlaying());
+        if( wavesurfer.isPlaying() ) {
+            isPlaying = false;
+            wavesurfer.pause();
+        }
+        else {
+            wavesurfer.play();
+            isPlaying = true;
+        }
+    }
+
     onMount( async () => {
+        const linGrad = document.createElement('canvas').getContext('2d').createLinearGradient(0, 0, 300, 200);
+        linGrad.addColorStop(0, '#ee7752'); 
+        linGrad.addColorStop(1, '#e73c7e');
+
+        wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            barWidth: 2,
+            barGap: 2,
+            barRadius: 2,
+            waveColor: getCssVariable('--bs-primary'),
+            progressColor: linGrad,
+            cursorColor: getCssVariable('--bs-secondary'),
+            height: 80,
+            cursorWidth: 0
+        });
+        wavesurfer.load('src/assets/my-song.ogg');
+
         whenInViewPort('#about .codeit-tiles', () => {
             gsap.fromTo('#about .codeit-tiles-tile', 
                 {
@@ -79,3 +125,8 @@
         })
     })
 </script>
+<style>
+    #waveform {
+        overflow: hidden;
+    }
+</style>
