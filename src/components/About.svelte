@@ -75,6 +75,7 @@
     import { whenInViewPort } from "../lib/_viewport";
     import { onMount } from "svelte";
     import WaveSurfer from 'wavesurfer.js';
+    import cursor from 'wavesurfer.js/src/plugin/cursor';
     import { getCssVariable } from '../composables/_core';
 
     let wavesurfer: WaveSurfer;
@@ -102,11 +103,25 @@
             barWidth: 2,
             barGap: 2,
             barRadius: 2,
+            responsive: true,
             waveColor: getCssVariable('--bs-primary'),
             progressColor: linGrad,
             cursorColor: getCssVariable('--bs-secondary'),
             height: 80,
-            cursorWidth: 0
+            cursorWidth: 0,
+            plugins: [
+                cursor.create({
+                    showTime: true,
+                    opacity: '1',
+                    customShowTimeStyle: {
+                        backgroundColor: getCssVariable('--bs-dark'),
+                        color: '#fff',
+                        padding: '3px 7px',
+                        fontSize: '.7rem',
+                    },
+                    width: '0'
+                })
+            ]
         });
         wavesurfer.load(MyAmazingSong);
 
@@ -126,8 +141,9 @@
         })
     })
 </script>
-<style>
+<style scoped>
     #waveform {
         overflow: hidden;
+        cursor: pointer;
     }
 </style>
