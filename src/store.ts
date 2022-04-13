@@ -4,4 +4,4 @@ export const contact = writable({
     name: '',
     email: '',
     message: ''
-})
+});

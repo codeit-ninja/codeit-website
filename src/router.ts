@@ -1,26 +1,26 @@
 export const routes = [
     {
-        icon: 'icon icon-menu-timeline',
+        icon: 'bi bi-clock-history',
         name: 'Welcome',
         component: async () => import('./components/Welcome.svelte')
     },
     {
-        icon: 'icon icon-user',
+        icon: 'bi bi-person',
         name: 'About',
         component: async () => import('./components/About.svelte')
     },
     {
-        icon: 'icon icon-menu-skills',
+        icon: 'bi bi-list-check',
         name: 'Experience',
         component: async () => import('./components/Experience.svelte')
     },
     {
-        icon: 'icon icon-menu-portolio',
+        icon: 'bi bi-archive',
         name: 'Portfolio',
         component: async () => import('./components/Portfolio.svelte')
     },
     {
-        icon: 'icon icon-menu-contact',
+        icon: 'bi bi-envelope',
         name: 'Contact',
         component: async () => import('./components/Contact.svelte')
     }

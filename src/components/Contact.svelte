@@ -11,17 +11,17 @@
                         <div class="codeit-tiles-tile text-center">
                             <i class="icon icon-envelope-o fs-4 text-secondary"></i>
                             <h5 class="mb-0 mt-3">Email</h5>
-                            <span>richard@codeit.ninja</span>
+                            <a href="mailto:richard@codeit.ninja" title="Send a mail">richard@codeit.ninja</a>
                         </div>
                         <div class="codeit-tiles-tile text-center">
                             <i class="icon icon-whatsapp fs-4 text-secondary"></i>
                             <h5 class="mb-0 mt-3">Whatsapp</h5>
-                            <span>+31637409282</span>
+                            <a href="https://wa.me/+31637409282" title="Send me a message on WhatsApp">+31637409282</a>
                         </div>
                         <div class="codeit-tiles-tile text-center">
                             <i class="icon icon-linkedin2 fs-4 text-secondary"></i>
                             <h5 class="mb-0 mt-3">LinkedIn</h5>
-                            <span>https://www.linkedin.com/</span>
+                            <a href="https://www.linkedin.com/" title="Check out my linkedIn profile" target="_blank">https://www.linkedin.com/</a>
                         </div>
                     </div>
                 </div>

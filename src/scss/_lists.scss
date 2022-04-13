@@ -84,8 +84,8 @@
 
     &-badges {
         li {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e);
-            color: $white;
+            background: $primary;
+            color: $secondary;
             font-size: .8rem;
             font-weight: 600;
             padding: .2rem .5rem;

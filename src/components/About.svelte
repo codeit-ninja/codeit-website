@@ -95,8 +95,8 @@
 
     onMount( async () => {
         const linGrad = document.createElement('canvas').getContext('2d').createLinearGradient(0, 0, 300, 200);
-        linGrad.addColorStop(0, '#ee7752'); 
-        linGrad.addColorStop(1, '#e73c7e');
+        linGrad.addColorStop(0, '#ff6333'); 
+        linGrad.addColorStop(1, '#ff2377');
 
         wavesurfer = WaveSurfer.create({
             container: '#waveform',
@@ -105,7 +105,7 @@
             barRadius: 2,
             responsive: true,
             waveColor: getCssVariable('--bs-primary'),
-            progressColor: linGrad,
+            progressColor: linGrad as unknown as string, // is supported but typing missing
             cursorColor: getCssVariable('--bs-secondary'),
             height: 80,
             cursorWidth: 0,

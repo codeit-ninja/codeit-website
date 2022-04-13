@@ -6,10 +6,22 @@
         box-shadow: 0 10px 30px -15px darken($primary, 25);
         opacity: 0;
 
+        &-body {
+            b {
+                display: inline;
+                text-decoration: none;
+                background: linear-gradient(-45deg, #ff6333, #ff2377);
+                background-repeat: no-repeat;
+                background-position: bottom left;
+                background-size: 100% 2px;
+                transition: background-size 500ms ease-in-out;
+            }
+        }
+
         &-header {
-            .icon {
-                font-size: 2.3rem;
-                color: $secondary;
+            .bi {
+                font-size: 1.3rem;
+                color: $text-muted;
             }
 
             h5 {

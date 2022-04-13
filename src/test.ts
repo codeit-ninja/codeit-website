@@ -22,7 +22,7 @@ const codeit = {
                 },
                 {
                     name: 'Svelte',
-                    level: 2
+                    level: 1
                 },
                 {
                     name: 'Bootstrap',
@@ -39,6 +39,14 @@ const codeit = {
                 {
                     name: 'NPM',
                     level: 1
+                },
+                {
+                    name: 'ES6',
+                    level: 1
+                },
+                {
+                    name: 'Github',
+                    level: 1
                 }
             ]
         },
@@ -51,6 +59,10 @@ const codeit = {
                 },
                 {
                     name: 'NodeJS',
+                    level: 1
+                },
+                {
+                    name: 'AdonisJS',
                     level: 1
                 },
                 {
@@ -82,7 +94,7 @@ const codeit = {
                     level: 2
                 },
                 {
-                    name: 'Amazon S3',
+                    name: 'S3',
                     level: 2
                 }
             ]
