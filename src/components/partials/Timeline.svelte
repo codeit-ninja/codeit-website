@@ -74,8 +74,6 @@
                 
                 animDurations.delay = animDurations.delay + animDurations.line / 1.5 + animDurations.dot;
             }
-
-            //return tl;
         }
 
         scene1()
@@ -94,7 +92,7 @@
             <div class="codeit-timeline-body">
                 <strong class="codeit-timeline-title">Code IT</strong>
                 <p class="mb-0">
-                    Started as freelancer
+                    Begonnen als freelancer, uiteindelijk dan toch echt het toppunt van een nerd behaald.
                 </p>
                 <ul class="codeit-badges mt-3 mb-5">
                     <li>Vue</li>
@@ -122,10 +120,10 @@
             <div class="codeit-timeline-body">
                 <strong class="codeit-timeline-title">Infocaster/Prodes</strong>
                 <p class="mb-0">
-                    Started as Vue front-end developer. But found out I rather
-                    wanted to stay fullstack. Moved to another group inside the
-                    company, which was later baptized to prodes. Created amazing
-                    applications for great customers.
+                    Begonnen als Vue front-end developer. Later overgegaan tot fullstack
+                    omdat ik zowel front als backend erg leuk vindt.
+                    Heb hier mee mogen werken aan geweldige applicaties voor
+                    grote klanten.
                 </p>
                 <ul class="codeit-badges mt-3 mb-5">
                     <li>Vue</li>
@@ -150,9 +148,11 @@
             <div class="codeit-timeline-body">
                 <strong class="codeit-timeline-title">Solvisoft</strong>
                 <p class="mb-0">
-                    Helped them engineer their entire CMS to be dynamic using
-                    AngularJS. We seperated back-end from front-end by creating API
-                    endpoints. I was responsible for the AngularJS implementation.
+                    Heb hier gewerkt als front-end developer. Omdat ik ervaring had
+                    met AngularJS werdt mij de opdracht gegeven om hun complete CMS 
+                    dynamisch te maken met AngularJS. Ik was verantwoordelijk voor
+                    zowel het bouwen van de front-end als de standaard
+                    m.b.t. AngularJS.
                 </p>
                 <ul class="codeit-badges mt-3 mb-5">
                     <li>JavaScript</li>
@@ -175,9 +175,9 @@
             <div class="codeit-timeline-body">
                 <strong class="codeit-timeline-title">Storm Online</strong>
                 <p class="mb-0">
-                    Was the only front-end developer. Was responsible for all
-                    WordPress websites. I designed and created custom themes, and
-                    plugins.
+                    Mijn eerste fulltime baan. Aangenomen als fullstack ontwikkelaar.
+                    Was verantwoordelijk voor alle websites, zowel front als back-end.
+                    Ik maakte custom thema's en plugins voor WordPress.
                 </p>
                 <ul class="codeit-badges mt-3 mb-5">
                     <li>WordPress</li>
@@ -199,8 +199,8 @@
         </div>
         <div class="codeit-timeline-item-right-side">
             <div class="codeit-timeline-body">
-                <strong class="codeit-timeline-title">Became a nerd</strong>
-                <p class="mb-0">At the age of 13 I started to write my first code</p>
+                <strong class="codeit-timeline-title">Op pad om een nerd te worden</strong>
+                <p class="mb-0">Op 13 jarige leeftijd schreef ik mijn eerste code. Hiermee begon ook het leven als nerd.</p>
                 <ul class="codeit-badges mt-3 mb-5">
                     <li>HTML</li>
                     <li>CSS</li>

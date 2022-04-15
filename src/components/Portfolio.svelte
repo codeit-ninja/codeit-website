@@ -25,7 +25,7 @@
 <div class="codeit-section mt-5" id="portfolio">
     <div class="codeit-section-container container">
         <header class="codeit-section-header mt-auto">
-            <span>Things I made</span>
+            <span>Om over op te scheppen</span>
             <h1>Portfolio</h1>
         </header>
         <div class="codeit-section-content mt-auto">
@@ -193,6 +193,8 @@
                     class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
                 >
                     <div class="portfolio-item-header">
+                        <i class="bi bi-incognito float-end" title="Top secret"></i>
+                        <br/>
                         <i class="icon icon-project" />
                         <h5>Een VOD alternatief voor ons thuis</h5>
                     </div>
@@ -215,10 +217,10 @@
                         </ul>
                     </div>
                 </div>
-                <div
-                    class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column"
-                >
+                <div class="g-col-12 g-col-md-6 g-col-lg-4 portfolio-item d-flex flex-column">
                     <div class="portfolio-item-header">
+                        <i class="bi bi-incognito float-end" title="Top secret"></i>
+                        <br/>
                         <i class="icon icon-project" />
                         <h5>API koppling voor Alliander</h5>
                     </div>
