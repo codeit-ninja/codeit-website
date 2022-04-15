@@ -10,4 +10,41 @@
             }
         }
     }
+
+    &-player {
+        padding: 0;
+        color: $secondary;
+        border: 1px solid rgba($secondary, 1);
+        margin: 0;
+        border-radius: 0;
+        padding: .4rem .7rem .2rem;
+        font-size: 1.4rem;
+    }
+
+    &-play {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+
+        .bi {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e);
+            font-size: 3rem;
+            color: $secondary;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &-stop {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }

@@ -10,3 +10,13 @@ b,
 strong {
     color: $white;
 }
+
+.text-purple {
+    color: $purple;
+}
+
+.ff-monospace {
+    font-family: $font-family-monospace !important;
+    text-decoration: none !important;
+    font-size: .9rem;
+}

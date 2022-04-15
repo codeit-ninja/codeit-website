@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Curriculum from './components/Curriculum.svelte';
     import Nav from './components/partials/Nav.svelte';
     import Router from './components/Router.svelte';
 </script>

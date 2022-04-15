@@ -1,5 +1,4 @@
 import { writable } from 'svelte/store';
-import { slugify } from 'underscore.string'
 
 export type page = {
     name: string;

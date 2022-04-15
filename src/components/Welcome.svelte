@@ -1,12 +1,12 @@
 <div class="codeit-section min-vh-100" id="welcome">
     <div class="codeit-section-container container min-vh-100">
         <header class="codeit-section-header mt-auto">
-            <span class="text-white">Hello, I'm</span>
+            <span class="text-white">Hallo, ik ben</span>
             <h1>{codeit.owner}</h1>
-            <span>I write code</span>
-            <div class="codeit-section-header-buttons">
-                <button class="btn btn-lg btn-outline-secondary">Download CV</button>
-                <button class="btn btn-lg btn-secondary">Contact me</button>
+            <span>Ik schrijf code</span>
+            <div class="codeit-section-header-buttons d-block d-sm-flex">
+                <a role="button" class="btn btn-lg btn-outline-secondary mb-3 mb-sm-0" href="https://wa.me/+31637409282" target="_blank">WhatsApp</a>
+                <a role="button" class="btn btn-lg btn-secondary" href="#contact">Stuur mij een bericht</a>
             </div>
         </header>
         <div class="codeit-section-content mt-auto">
@@ -20,7 +20,7 @@
                     <Timeline />
                 </div>
                 <div class="col-lg-3 align-self-center text-center d-none d-lg-block">
-                    <span class="tb text-secondary">Scroll down</span>
+                    <a href="mailto:richard@codeit.ninja" class="tb ff-monospace">richard@codeit.ninja</a>
                 </div>
             </div>
         </div>

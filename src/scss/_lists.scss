@@ -84,7 +84,7 @@
 
     &-badges {
         li {
-            background-color: $primary;
+            background: $primary;
             color: $secondary;
             font-size: .8rem;
             font-weight: 600;
@@ -95,8 +95,9 @@
 
         &-reversed {
             li {
+                background: none;
                 background-color: lighten($primary, 15);
-                color: $secondary;
+                color: $white;
                 box-shadow: 2px 2px 8px -4px darken($primary, 8);
             }
         }

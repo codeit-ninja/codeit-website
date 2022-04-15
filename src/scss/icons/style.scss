@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?dbsn7b') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?dbsn7b') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?dbsn7b##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?9o1z30') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?9o1z30') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?9o1z30##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-medal {
+  &:before {
+    content: $icon-medal; 
+  }
+}
+.icon-svelte {
+  &:before {
+    content: $icon-svelte;     
+    color: #ff3e00;
+  }
+}
 .icon-user {
   &:before {
     content: $icon-user; 
@@ -39,27 +50,6 @@
 .icon-menu-timeline {
   &:before {
     content: $icon-menu-timeline; 
-  }
-}
-.icon-svelte {
-  &:before {
-    content: $icon-svelte;     
-    color: #ff3e00;
-  }
-}
-.icon-menu-contact {
-  &:before {
-    content: $icon-menu-contact; 
-  }
-}
-.icon-heart {
-  &:before {
-    content: $icon-heart; 
-  }
-}
-.icon-envelope-o {
-  &:before {
-    content: $icon-envelope-o; 
   }
 }
 .icon-checkmark {
@@ -110,6 +100,41 @@
 .icon-stackoverflow {
   &:before {
     content: $icon-stackoverflow; 
+  }
+}
+.icon-ribbon {
+  &:before {
+    content: $icon-ribbon; 
+  }
+}
+.icon-play {
+  &:before {
+    content: $icon-play; 
+  }
+}
+.icon-pause {
+  &:before {
+    content: $icon-pause; 
+  }
+}
+.icon-stop {
+  &:before {
+    content: $icon-stop; 
+  }
+}
+.icon-menu-contact {
+  &:before {
+    content: $icon-menu-contact; 
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart; 
+  }
+}
+.icon-envelope-o {
+  &:before {
+    content: $icon-envelope-o; 
   }
 }
 
