@@ -4,8 +4,8 @@
             <span class="text-white">Hallo, ik ben</span>
             <h1>{codeit.owner}</h1>
             <span>Ik schrijf code</span>
-            <div class="codeit-section-header-buttons d-block d-sm-flex">
-                <a role="button" class="btn btn-lg btn-outline-secondary mb-3 mb-sm-0" href="https://wa.me/+31637409282" target="_blank">WhatsApp</a>
+            <div class="codeit-section-header-buttons flex-column flex-sm-row">
+                <a role="button" class="btn btn-lg btn-outline-secondary mb-0" href="https://wa.me/+31637409282" target="_blank">WhatsApp</a>
                 <a role="button" class="btn btn-lg btn-secondary" href="#contact">Stuur mij een bericht</a>
             </div>
         </header>
