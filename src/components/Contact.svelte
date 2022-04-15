@@ -29,7 +29,7 @@
                     {#if emailSend}
                         <div class="alert alert-success" role="alert">
                             <h5 class="text-dark mb-4">🎉🎉🎉</h5>
-                            Bedankt voor je bericht {$contact.name}. Ik probeer zo snel mogelijk te reageren, meestal gebeurt dit binnen 24 uur.
+                            Bedankt voor je bericht {$contact.name}. Ik probeer zo snel mogelijk te reageren, meestal binnen 24 uur.
                         </div>
                     {/if}
                     {#if isError}
@@ -83,8 +83,9 @@
 
     const submit = async () => {
         isSending = true;
+        isError = false;
 
-        if( $contact.puzzle !== (puzzle.first + puzzle.second) ) {
+        if( parseInt($contact.puzzle) !== (puzzle.first + puzzle.second) ) {
             isSending = false;
             emailSend = false;
             isError = true;
