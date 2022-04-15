@@ -47,7 +47,7 @@
                             Al gauw leerde ik HTML, CSS, jQuery en PHP. Op mijn 17e besloot ik hiervan mijn fulltime baan te maken.
                         </p>
                         <p>
-                            <small>* Oh, in een muziekale bui maak ik ook muziek.</small>
+                            <small>P.S. In een muziekale bui maak ik ook muziek. 🎶</small>
                         </p>
                     </div>
                     <div class="mb-3">
