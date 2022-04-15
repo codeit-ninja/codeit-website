@@ -1,24 +1,13 @@
 body {
+    background-image: url('../assets/pattern-5.svg');
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 26000px;
+    scroll-behavior: smooth;
+
 	main {
 		padding: 0 1rem;
 		margin: 0;
 		border-color: darken(#3d2e8c, 15);
-	}
-
-    #app {
-        background-image: url('../assets/pattern-5.svg');
-        background-repeat: repeat;
-        background-position: top;
-        background-size: 26000px;
-        animation: gradient 1520s ease infinite;
-    }
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 15% 100%;
 	}
 }
