@@ -38,7 +38,7 @@
                             interesse in computers en alles wat daarbij komt kijken onstaan.
                         </p>
                         <p>
-                            Op mijn 13e bouwde ik voor het eerst mijn eigen PC. Compleet met LED's, deze kocht je toen nog bij een bezine station,
+                            Op mijn 13e bouwde ik voor het eerst mijn eigen PC. Compleet met LED's, deze kocht je toen nog bij een benzinestation,
                             officieel bedoeld voor in de auto maar die 12v connector kon prima op een van de 12v draadjes in de PC. Met behulp van
                             onze buurman bouwde ik er een heus plexiglas in zodat ik kon pronken met de binnenkant.
                         </p>
