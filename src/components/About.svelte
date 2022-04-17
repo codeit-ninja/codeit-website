@@ -51,13 +51,13 @@
                         </p>
                     </div>
                     <div class="mb-3">
-                        <div class="d-flex align-items-center gap-4">
-                            <div>
+                        <div class="grid align-items-center">
+                            <div class="g-col-1">
                                 <button class="btn btn-player btn-play btn-lg" on:click={toggle}>
                                     <i class="bi" class:bi-play-circle={!isPlaying} class:bi-pause-circle={isPlaying}></i>
                                 </button>
                             </div>
-                            <div class="flex-grow-1">
+                            <div class="g-col-11">
                                 <div id="waveform"></div>
                             </div>
                         </div>
