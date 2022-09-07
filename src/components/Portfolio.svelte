@@ -92,7 +92,7 @@
                         <h5>Vacatures filteren op basis van postcode</h5>
                     </div>
                     <div class="portfolio-item-body">
-                        Een zoekfunctionaliteit ontwikkeld voor New York Pizza's
+                        Een zoekfunctionaliteit ontwikkeld voor een grote pizzeria's
                         werkenbij website, zodat potentiële nieuwe werknemers
                         kunnen <b class="fw-normal">zoeken op actuele vacatures in de buurt</b>.
                     </div>
@@ -113,7 +113,7 @@
                         </a>
                         <br/>
                         <i class="icon icon-project" />
-                        <h5>Royaljongbloed - Hoor het Woord roostertool</h5>
+                        <h5>Roostertool</h5>
                     </div>
                     <div class="portfolio-item-body">
                         Een applicatie ontwikkeld waarin <b class="fw-normal">leerkrachten
@@ -222,11 +222,11 @@
                         <i class="bi bi-incognito float-end" title="Top secret"></i>
                         <br/>
                         <i class="icon icon-project" />
-                        <h5>API koppling voor Alliander</h5>
+                        <h5>API koppling voor energieleverancier</h5>
                     </div>
                     <div class="portfolio-item-body">
                         Een WordPress plugin ontwikkeld voor de
-                        dochterondernemingen van Alliander om te <b class="fw-normal">koppelen met
+                        dochterondernemingen van grote nederlandse energieleverancier om te <b class="fw-normal">koppelen met
                         interne vacature systemen</b>.
                     </div>
                     <div class="portfolio-item-footer mt-auto">
