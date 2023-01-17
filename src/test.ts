@@ -100,6 +100,16 @@ const codeit = {
                     percentage: 90
                 },
                 {
+                    name: 'Pocketbase',
+                    level: 1,
+                    percentage: 90
+                },
+                {
+                    name: 'Xata.io',
+                    level: 1,
+                    percentage: 90
+                },
+                {
                     name: 'FireStore',
                     level: 1,
                     percentage: 80
