@@ -106,9 +106,11 @@
                     <li>Bootstrap</li>
                     <li>Tailwind CSS</li>
                     <li>PHP</li>
+                    <li>Pocketbase</li>
                     <li>Electron</li>
                     <li>SCSS</li>
                     <li>Amazon AWS</li>
+                    <li>Xata.io</li>
                 </ul>
             </div>
         </div>
