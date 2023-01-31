@@ -10,7 +10,7 @@ const codeit = {
                     percentage: 90
                 },
                 {
-                    name: 'TypeScript',
+                    name: 'SvelteKit',
                     level: 1,
                     percentage: 90
                 },
@@ -28,6 +28,16 @@ const codeit = {
                     name: 'Svelte',
                     level: 1,
                     percentage: 85
+                },
+                {
+                    name: 'TypeScript',
+                    level: 1,
+                    percentage: 90
+                },
+                {
+                    name: 'Tailwind CSS',
+                    level: 1,
+                    percentage: 90
                 },
                 {
                     name: 'Bootstrap',
@@ -86,6 +96,16 @@ const codeit = {
                 },
                 {
                     name: 'MySQL',
+                    level: 1,
+                    percentage: 90
+                },
+                {
+                    name: 'Pocketbase',
+                    level: 1,
+                    percentage: 90
+                },
+                {
+                    name: 'Xata.io',
                     level: 1,
                     percentage: 90
                 },

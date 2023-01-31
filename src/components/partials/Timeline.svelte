@@ -95,16 +95,22 @@
                     Begonnen als freelancer, uiteindelijk dan toch echt het toppunt van een nerd behaald.
                 </p>
                 <ul class="codeit-badges mt-3 mb-5">
+                    <li>Svelte</li>
+                    <li>SvelteKit</li>
                     <li>Vue</li>
                     <li>WordPress</li>
                     <li>JavaScript</li>
                     <li>TypeScript</li>
                     <li>NodeJS</li>
                     <li>AdonisJS</li>
+                    <li>Bootstrap</li>
+                    <li>Tailwind CSS</li>
                     <li>PHP</li>
+                    <li>Pocketbase</li>
                     <li>Electron</li>
                     <li>SCSS</li>
                     <li>Amazon AWS</li>
+                    <li>Xata.io</li>
                 </ul>
             </div>
         </div>
