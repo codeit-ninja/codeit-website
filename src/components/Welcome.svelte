@@ -6,7 +6,7 @@
             <span>Ik schrijf code</span>
             <div class="codeit-section-header-buttons flex-column flex-sm-row">
                 <a role="button" class="btn btn-lg btn-outline-secondary mb-0" href="https://wa.me/+31637409282" target="_blank" rel="noreferrer">WhatsApp</a>
-                <a role="button" class="btn btn-lg btn-secondary" href="/public/ninja.pdf" download>Download mijn CV</a>
+                <a role="button" class="btn btn-lg btn-secondary" href="/ninja.pdf" download>Download mijn CV</a>
             </div>
         </header>
         <div class="codeit-section-content mt-auto">
