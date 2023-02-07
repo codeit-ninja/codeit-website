@@ -40,17 +40,17 @@
                     {/if}
                     <form on:submit|preventDefault={submit}>
                         <div class="mb-4">
-                            <input type="text" class="form-control form-control-lg" placeholder="Voor en achternaam" name="name" bind:value={$contact.name} required />
+                            <input type="text" class="form-control form-control-lg w-100" placeholder="Voor en achternaam" name="name" bind:value={$contact.name} required />
                         </div>
                         <div class="mb-4">
-                            <input type="email" class="form-control form-control-lg" placeholder="Op welk emailadres kan ik je bereiken?" name="email" bind:value={$contact.email} required />
+                            <input type="email" class="form-control form-control-lg w-100" placeholder="Op welk emailadres kan ik je bereiken?" name="email" bind:value={$contact.email} required />
                         </div>
                         <div class="mb-4">
-                            <textarea class="form-control form-control-lg" placeholder="Vertel wat leuks, stel een vraag of bied me koffie aan" name="message" bind:value={$contact.message} rows="5" required></textarea>
+                            <textarea class="form-control form-control-lg w-100" placeholder="Vertel wat leuks, stel een vraag of bied me koffie aan" name="message" bind:value={$contact.message} rows="5" required></textarea>
                         </div>
                         <div class="mb-4 d-flex align-items-center">
                             <span style="width: 150px;" class="fs-3">{puzzle.first} + {puzzle.second} = </span>
-                            <input type="text" class="form-control form-control-lg" placeholder="uitkomst" bind:value={$contact.puzzle} />
+                            <input type="text" class="form-control form-control-lg flex-grow-1" placeholder="uitkomst" bind:value={$contact.puzzle} />
                         </div>
                         <div class="mb-4 d-flex">
                             

@@ -14,7 +14,7 @@
     $: currentlyActivePos = pos(activeNavItem, 'x');
     $: {
         navbar = document.querySelector('#site-nav ul');
-        console.log(pos(navbar, 'x'))
+        
         if( activeNavItem && activeNavItem !== prevActiveNavItem ) {
             left = currentlyActivePos - pos(navbar, 'x');
             activeNavItem.querySelector('a').style.color = getCssVariable('--bs-primary');
